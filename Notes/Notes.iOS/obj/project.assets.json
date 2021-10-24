@@ -1210,11 +1210,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
+      "projectUniqueName": "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes.iOS\\Notes.iOS.csproj",
       "projectName": "Notes.iOS",
-      "projectPath": "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
+      "projectPath": "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes.iOS\\Notes.iOS.csproj",
       "packagesPath": "C:\\Users\\j_d_d\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes.iOS\\obj\\",
+      "outputPath": "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1237,8 +1237,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes\\Notes.csproj": {
-              "projectPath": "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes\\Notes.csproj"
+            "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes\\Notes.csproj": {
+              "projectPath": "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes\\Notes.csproj"
             }
           }
         }

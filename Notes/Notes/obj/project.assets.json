@@ -655,11 +655,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes\\Notes.csproj",
+      "projectUniqueName": "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes\\Notes.csproj",
       "projectName": "Notes",
-      "projectPath": "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes\\Notes.csproj",
+      "projectPath": "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes\\Notes.csproj",
       "packagesPath": "C:\\Users\\j_d_d\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes\\obj\\",
+      "outputPath": "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

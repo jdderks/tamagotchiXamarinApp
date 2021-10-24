@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G00iAYYNAg2JiYf9/GnZ6xcAq0E6z/g/ksYHFfKzZiqKS8iFkDZEpJP8vNyIh1xAsEGk0BesrNMKqEpMvKt1SA==",
+  "dgSpecHash": "Bd2brK5Vuf+Ynym6DsrtD2/C6T0X5Dj3qAFhEC8j/LeFJLqZdf41zDhwoAEfWqIVxqFO2YwsMdsUkva4S41diw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes\\Notes.csproj",
+  "projectFilePath": "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes\\Notes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\j_d_d\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
     "C:\\Users\\j_d_d\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "kWM4u4ke/g0mEuSA4CNyDxIAXdPrviNPpT4Gs8n+sqEdDp1VPluAvnzWHIrZUKSo7KdHe1ji6h3oJwgIaxKM8A==",
+  "dgSpecHash": "SynMLBkUj0f5O0dG9X3SXBVQ6zhRCq1ZtkaY+4UOqmsHAv/kKJKxmrOx8pbpem6baPvWlucLvWmQ1DUEY18Suw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\j_d_d\\Desktop\\XamarinAppNotes\\Notes\\Notes\\Notes.iOS\\Notes.iOS.csproj",
+  "projectFilePath": "B:\\GitRepositories\\tamagotchiXamarinApp\\Notes\\Notes.iOS\\Notes.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\j_d_d\\.nuget\\packages\\fody\\6.5.1\\fody.6.5.1.nupkg.sha512",
     "C:\\Users\\j_d_d\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",

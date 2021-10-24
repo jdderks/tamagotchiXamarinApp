@@ -75,23 +75,23 @@ namespace Notes.Views
 
         public ClickPage()
         {
-            var creatureDataStore = DependencyService.Get<IDataStore<Creature>>();
-            Smiley = creatureDataStore.readItem();
-            if (Smiley == null)
-            {
-                Smiley = new Creature
-                {
-                    Name = "Smiley",
-                    Hunger = 0.5f,
-                    Thirst = 0.5f,
-                    Boredom = 0.5f,
-                    Loneliness = 0.5f,
-                    Stimulated = 0.5f,
-                    Tired = 0.5f
+            //var creatureDataStore = DependencyService.Get<IDataStore<Creature>>();
+            //Smiley = creatureDataStore.readItem();
+            //if (Smiley == null)
+            //{
+            //    Smiley = new Creature
+            //    {
+            //        Name = "Smiley",
+            //        Hunger = 0.5f,
+            //        Thirst = 0.5f,
+            //        Boredom = 0.5f,
+            //        Loneliness = 0.5f,
+            //        Stimulated = 0.5f,
+            //        Tired = 0.5f
                   
-                };
-                creatureDataStore.CreateItem(Smiley);
-            }
+            //    };
+            //    creatureDataStore.CreateItem(Smiley);
+            //}
 
 
 
@@ -112,7 +112,7 @@ namespace Notes.Views
             Smiley.Hunger -= 0.005f;
             Smiley.Thirst -= 0.02f;
             Smiley.Boredom -= 0.005f;
-            Smiley.Tired += 0.01f;
+            Smiley.Tired -= 0.01f;
             OnPropertyChanged();
             switch (currentGiveState)
             {
@@ -181,7 +181,8 @@ namespace Notes.Views
 
                         Smiley.Boredom += 0.01f;
                         Smiley.Stimulated += 0.01f;
-                        Smiley.Tired += 0.01f;
+                        Smiley.Loneliness += 0.01f;
+                        Smiley.Tired -= 0.01f;
 
 
                         ClickVibrate();
@@ -200,6 +201,8 @@ namespace Notes.Views
                     {
                         ClickVibrate();
                         ButtonText = "Thanks for letting me sleep...";
+                        Smiley.Hunger -= 0.01f;
+                        Smiley.Thirst -= 0.01f;
                         Smiley.Tired += 0.01f;
                         UpdatePercentageText(Smiley.Tired);
                         await HollowHappyJump();
