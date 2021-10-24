@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Views.ClickPage"
+             Title="Clicker"
+             BackgroundColor="#050505">
+
+
+    <ContentPage.Content>
+        <StackLayout>
+            <Image
+                x:Name= "hollow" 
+                Source= "smiley.png"
+                BackgroundColor= "{OnPlatform iOS=LightSlateGray, Android=#000 }"
+                VerticalOptions= "Center"
+                HeightRequest="100"/>
+            <Label Text="{Binding emojiMessageText, Mode=TwoWay}"
+                FontSize="20"
+                HorizontalOptions="CenterAndExpand" 
+                BackgroundColor="Black"
+                TextColor="White"/>
+            <Label Text="{Binding CookiesGivenText, Mode=TwoWay}"
+                FontSize="90"
+                HorizontalOptions="CenterAndExpand" 
+                BackgroundColor="Black"
+                TextColor="White"/>
+            <Button Text="{Binding ButtonText, Mode=OneWay}" TextColor="Black"
+                    Pressed="OnClickButtonClicked"
+                    BackgroundColor="{OnPlatform iOS=LightSlateGray, Android=White }"/>
+
+            <Grid>
+                <!--Select attention button-->
+                <StackLayout Grid.Row="0" Grid.Column="0">
+                    <Button Text="Select food" 
+                            Command="{Binding SetGiveStateCommand}" 
+                            CommandParameter="0"/>
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="1">
+                    <Button Text="Select drink"
+                            Command="{Binding SetGiveStateCommand}" 
+                            CommandParameter="1"/>
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="2">
+                    <Button Text="Select attention"
+                            Command="{Binding SetGiveStateCommand}" 
+                            CommandParameter="2"/>
+                </StackLayout>
+                <StackLayout Grid.Row="0" Grid.Column="3">
+                    <Button Text="Select sleep"
+                            Command="{Binding SetGiveStateCommand}" 
+                            CommandParameter="3"/>
+                </StackLayout>
+            </Grid>
+            <Grid>
+                <!--Food progress bar-->
+                <StackLayout Grid.Row="0">
+                    <Label Text="Hunger" FontSize="15"/>
+                    <ProgressBar Progress="{Binding Smiley.Hunger}" ProgressColor="#00d94c" ScaleY="4" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <!--Select food button-->
+
+
+                <!--Drink progress bar-->
+                <StackLayout Grid.Row="1">
+                    <Label Text="Thirst" FontSize="15"/>
+
+                    <ProgressBar Progress="{Binding Smiley.Thirst}" ProgressColor="#0062ff" ScaleY="4" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <!--Select drink button-->
+
+
+                <!--Attention progress bar-->
+                <StackLayout Grid.Row="2">
+                    <Label Text="Boredom" FontSize="15"/>
+                    <ProgressBar Progress="{Binding Smiley.Boredom}" ProgressColor="Yellow" ScaleY="4" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <!--Select attention button-->
+
+                <StackLayout Grid.Row="3">
+                    <Label Text="Loneliness" FontSize="15"/>
+                    <ProgressBar Progress="{Binding Smiley.Loneliness}" ProgressColor="DarkGreen" ScaleY="4" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+
+                <!--Attention progress bar-->
+                <StackLayout Grid.Row="4">
+                    <Label Text="Stimulated" FontSize="15"/>
+                    <ProgressBar Progress="{Binding Smiley.Stimulated}" ProgressColor="Orange" ScaleY="4" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                
+                <StackLayout Grid.Row="5">
+                    <Label Text="Energy" FontSize="15"/>
+                    <ProgressBar Progress="{Binding Smiley.Tired}" ProgressColor="DarkBlue" ScaleY="4" VerticalOptions="CenterAndExpand" />
+                </StackLayout>
+                <!--Select attention button-->
+          
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

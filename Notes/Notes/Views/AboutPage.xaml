@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Notes.Views.AboutPage"
+             Title="Mr. Hollow"
+             BackgroundColor="#050505">
+
+    <!-- Layout children in two rows -->
+    <!--<Grid RowDefinitions="Auto,*">
+        <Image Source="hollow.png"
+               BackgroundColor="{OnPlatform iOS=LightSlateGray, Android=#000 }"
+               VerticalOptions="Center"
+               HeightRequest="500" />
+        --><!-- Layout children vertically --><!--
+        <StackLayout Grid.Row="1"
+                     Margin="20"
+                     Spacing="20">
+            <Button Text="Or here" TextColor="Black"
+                    Clicked="OnButtonClickedAlternative" 
+                    BackgroundColor="{OnPlatform iOS=LightSlateGray, Android=White }"/>
+        </StackLayout>
+    </Grid>-->
+
+    <Grid RowDefinitions="2,3">
+        <StackLayout Grid.Row="1">
+            <Label x:Name="hungerText" 
+                   Text="Yeeee" 
+                   TextColor="White"/>
+        </StackLayout>
+        <StackLayout Grid.Row="1" Grid.Column="1">
+            <Button x:Name="HungerButton" Text="Hungerbutt"/>
+        </StackLayout>
+
+    </Grid>
+    
+</ContentPage>
+        
